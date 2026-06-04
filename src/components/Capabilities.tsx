@@ -21,22 +21,22 @@ export const Capabilities: React.FC = () => {
     {
       icon: '▶',
       title: 'Camera Looks',
-      desc: '35mm film grain, medium format softness, sharp digital, vintage Polaroid, cinematic anamorphic — name it.',
+      desc: '35mm film grain, medium format softness, sharp digital, vintage Polaroid, cinematic anamorphic, name it.',
     },
     {
       icon: '✦',
       title: 'Dress & Outfit',
-      desc: "From streetwear to couture, traditional to futuristic — you don't need to own it or wear it. We build it into the shot.",
+      desc: "From streetwear to couture, traditional to futuristic, you don't need to own it or wear it. We build it into the shot.",
     },
     {
       icon: '■',
       title: 'Poses & Composition',
-      desc: 'Candid, power pose, reclining, walking — any body language, any angle, any energy. We direct the frame around you.',
+      desc: 'Candid, power pose, reclining, walking, any body language, any angle, any energy. We direct the frame around you.',
     },
     {
       icon: '○',
       title: 'Scene & Location',
-      desc: 'Rooftop Lagos, Paris street café, desert dunes, clean white studio — any backdrop, no travel required.',
+      desc: 'Rooftop Lagos, Paris street café, desert dunes, clean white studio, any backdrop, no travel required.',
     },
   ];
 

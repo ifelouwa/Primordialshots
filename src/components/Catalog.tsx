@@ -8,71 +8,125 @@ interface CatalogProps {
 export const Catalog: React.FC<CatalogProps> = ({ onPhotoClick }) => {
   const [activeFilter, setActiveFilter] = useState('all');
 
-  const filters = ['all', 'portrait', 'editorial', 'campaign', 'documentary'];
+  const filters = [
+    { key: 'all', label: 'All' },
+    { key: 'birthday', label: 'Birthday' },
+    { key: 'headshots', label: 'Professional Headshots' },
+    { key: 'couples', label: 'Couples/Anniversaries' },
+    { key: 'family', label: 'Family Portraits' },
+    { key: 'milestones', label: 'Milestones' },
+    { key: 'fashion', label: 'Fashion/Style' },
+    { key: 'holiday', label: 'Holiday Season' },
+  ];
 
   const cardsData = [
     {
       id: 1,
-      category: 'portrait',
-      caption: 'Amara — The Quiet Storm — 2026',
-      title: 'The Quiet Storm',
+      category: 'birthday',
+      caption: 'Amara — Birthday Session — 2026',
+      title: 'Warm Glow',
       year: 'Amara — 2026',
-      src: 'https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?w=600&auto=format&fit=crop&q=80',
-      gridClass: 'col-span-12 md:col-span-5 md:row-span-2',
+      src: 'https://images.unsplash.com/photo-1527529482837-4698179dc6ce?w=600&auto=format&fit=crop&q=80',
+      gridClass: 'col-span-12 md:col-span-4 md:row-span-2',
     },
     {
       id: 2,
-      category: 'editorial',
-      caption: 'Between Lines — Editorial — 2026',
-      title: 'Between Lines',
+      category: 'headshots',
+      caption: 'Joshua — Professional Headshot — 2026',
+      title: 'Creative Director',
       year: '2026',
-      src: 'https://images.unsplash.com/photo-1524504388940-b1c1722653e1?w=800&auto=format&fit=crop&q=80',
-      gridClass: 'col-span-12 md:col-span-7',
-    },
-    {
-      id: 3,
-      category: 'campaign',
-      caption: 'Vestige Campaign — 2026',
-      title: 'Vestige',
-      year: '2026',
-      src: 'https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=500&auto=format&fit=crop&q=80',
-      gridClass: 'col-span-12 md:col-span-4',
-    },
-    {
-      id: 4,
-      category: 'portrait',
-      caption: 'Nadia — Self — 2026',
-      title: 'Self',
-      year: 'Nadia — 2026',
-      src: 'https://images.unsplash.com/photo-1589571894960-20bbe2828d0a?w=400&auto=format&fit=crop&q=80',
-      gridClass: 'col-span-12 md:col-span-3',
-    },
-    {
-      id: 5,
-      category: 'documentary',
-      caption: 'Corners — Documentary — 2026',
-      title: 'Corners',
-      year: '2026',
-      src: 'https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=600&auto=format&fit=crop&q=80',
+      src: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=600&auto=format&fit=crop&q=80',
       gridClass: 'col-span-12 md:col-span-5',
     },
     {
-      id: 6,
-      category: 'editorial',
-      caption: 'Tone Poem — Editorial — 2026',
-      title: 'Tone Poem',
+      id: 3,
+      category: 'couples',
+      caption: 'Teni & Victor — Anniversary — 2026',
+      title: 'Golden Bond',
       year: '2026',
-      src: 'https://images.unsplash.com/photo-1488426862026-3ee34a7d66df?w=500&auto=format&fit=crop&q=80',
+      src: 'https://images.unsplash.com/photo-1515934751635-c81c6bc9a2d8?w=600&auto=format&fit=crop&q=80',
+      gridClass: 'col-span-12 md:col-span-3',
+    },
+    {
+      id: 4,
+      category: 'family',
+      caption: 'The Okonkwo Family — Portrait — 2026',
+      title: 'Legacy',
+      year: '2026',
+      src: 'https://images.unsplash.com/photo-1509099836639-18ba1795216d?w=600&auto=format&fit=crop&q=80',
+      gridClass: 'col-span-12 md:col-span-5 md:row-span-2',
+    },
+    {
+      id: 5,
+      category: 'milestones',
+      caption: 'Kelechi — Graduation — 2026',
+      title: 'New Horizons',
+      year: '2026',
+      src: 'https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=600&auto=format&fit=crop&q=80',
+      gridClass: 'col-span-12 md:col-span-3',
+    },
+    {
+      id: 6,
+      category: 'fashion',
+      caption: 'Editorial — Fashion Shoot — 2026',
+      title: 'High Couture',
+      year: '2026',
+      src: 'https://images.unsplash.com/photo-1488426862026-3ee34a7d66df?w=600&auto=format&fit=crop&q=80',
       gridClass: 'col-span-12 md:col-span-4',
     },
     {
       id: 7,
-      category: 'campaign',
-      caption: 'Dusk Campaign — 2026',
-      title: 'Dusk',
+      category: 'holiday',
+      caption: 'Holiday Session — Winter Cozy — 2026',
+      title: 'Festive Light',
       year: '2026',
-      src: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&auto=format&fit=crop&q=80',
+      src: 'https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=600&auto=format&fit=crop&q=80',
       gridClass: 'col-span-12 md:col-span-3',
+    },
+    {
+      id: 8,
+      category: 'birthday',
+      caption: 'Chisom — Birthday Session — 2026',
+      title: 'Candlelit Smile',
+      year: 'Chisom — 2026',
+      src: 'https://images.unsplash.com/photo-1513151233558-d860c5398176?w=600&auto=format&fit=crop&q=80',
+      gridClass: 'col-span-12 md:col-span-3',
+    },
+    {
+      id: 9,
+      category: 'headshots',
+      caption: 'Nadia — Executive Headshot — 2026',
+      title: 'Corporate Power',
+      year: '2026',
+      src: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=600&auto=format&fit=crop&q=80',
+      gridClass: 'col-span-12 md:col-span-5',
+    },
+    {
+      id: 10,
+      category: 'couples',
+      caption: 'Chinedu & Zara — Couples Portrait — 2026',
+      title: 'Sunkissed Embrace',
+      year: '2026',
+      src: 'https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?w=600&auto=format&fit=crop&q=80',
+      gridClass: 'col-span-12 md:col-span-4',
+    },
+    {
+      id: 11,
+      category: 'milestones',
+      caption: 'Segun — Executive Promotion — 2026',
+      title: 'The Next Chapter',
+      year: '2026',
+      src: 'https://images.unsplash.com/photo-1560250097-0b93528c311a?w=600&auto=format&fit=crop&q=80',
+      gridClass: 'col-span-12 md:col-span-6',
+    },
+    {
+      id: 12,
+      category: 'family',
+      caption: 'The Obi Family — Portrait — 2026',
+      title: 'Generations',
+      year: '2026',
+      src: 'https://images.unsplash.com/photo-1511895426328-dc8714191300?w=600&auto=format&fit=crop&q=80',
+      gridClass: 'col-span-12 md:col-span-6',
     },
   ];
 
@@ -93,7 +147,7 @@ export const Catalog: React.FC<CatalogProps> = ({ onPhotoClick }) => {
           </h2>
         </div>
         <div className="text-[0.8rem] text-brand-muted tracking-[0.15em] uppercase md:text-right leading-[1.8]">
-          Portraits / Editorial<br />
+          Portraits / Sessions<br />
           2026
         </div>
       </FadeIn>
@@ -102,15 +156,15 @@ export const Catalog: React.FC<CatalogProps> = ({ onPhotoClick }) => {
       <FadeIn delay={50} className="filter-bar flex gap-2 mb-12 flex-wrap select-none">
         {filters.map((filter) => (
           <button
-            key={filter}
-            onClick={() => setActiveFilter(filter)}
+            key={filter.key}
+            onClick={() => setActiveFilter(filter.key)}
             className={`font-body text-[0.72rem] tracking-[0.18em] uppercase px-5 py-2 border transition-all duration-200 cursor-pointer ${
-              activeFilter === filter
+              activeFilter === filter.key
                 ? 'bg-brand-accent border-brand-accent text-brand-black font-medium'
                 : 'bg-transparent border-brand-white/12 text-brand-muted hover:border-brand-accent hover:text-brand-accent'
             }`}
           >
-            {filter}
+            {filter.label}
           </button>
         ))}
       </FadeIn>
@@ -125,19 +179,19 @@ export const Catalog: React.FC<CatalogProps> = ({ onPhotoClick }) => {
               className={`relative overflow-hidden bg-brand-dark-surface cursor-pointer group transition-all duration-500 ${card.gridClass}`}
             >
               <img
-                className="w-full h-full object-cover grayscale-[15%] contrast-[1.05] transition-all duration-700 ease-out group-hover:scale-[1.05] group-hover:grayscale-0 group-hover:contrast-[1.08] min-h-[260px]"
+                className="w-full h-full object-cover grayscale-[15%] contrast-[1.05] transition-all duration-700 ease-out group-hover:scale-[1.05] group-hover:grayscale-0 group-hover:contrast-[1.08] min-h-[260px] max-h-[550px]"
                 src={card.src}
                 alt={card.title}
               />
               <div className="absolute inset-0 bg-gradient-to-t from-brand-black/85 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-[350ms] flex flex-col justify-end p-6">
                 <span className="text-[0.65rem] tracking-[0.25em] uppercase text-brand-accent mb-1.5 block">
-                  {card.category}
+                  {filters.find(f => f.key === card.category)?.label || card.category}
                 </span>
                 <span className="font-display text-2xl tracking-[0.05em] text-brand-white leading-none">
                   {card.title}
                 </span>
                 <span className="text-[0.72rem] text-brand-muted mt-1">
-                  {card.year}
+                  {card.caption}
                 </span>
               </div>
             </div>

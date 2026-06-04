@@ -6,22 +6,22 @@ export const HowItWorks: React.FC = () => {
     {
       num: '01',
       title: 'You Send a Photo',
-      desc: 'Any selfie, casual snapshot, or existing portrait works. We only need your face — everything else is up to us.',
+      desc: 'Any selfie, casual snapshot, or existing portrait works. We only need your face, everything else is up to us.',
     },
     {
       num: '02',
       title: 'Pick Your Vision',
-      desc: 'Choose your desired camera look, shooting style, pose direction, and outfit or dress from our style catalog — or send your own reference.',
+      desc: 'Choose your desired camera look, shooting style, pose direction, and outfit or dress from our style catalog or send your own reference.',
     },
     {
       num: '03',
       title: 'We Create',
-      desc: 'Our team crafts your portraits with precision — light, tone, and composition tuned to the exact aesthetic you specified.',
+      desc: 'Our team crafts your portraits with precision, light, tone, and composition tuned to the exact aesthetic you specified.',
     },
     {
       num: '04',
       title: 'You Receive',
-      desc: 'High-resolution files delivered to your inbox. Revisions included. No location required — ever.',
+      desc: 'High-resolution files delivered to your inbox. Revisions included. No location required ever.',
     },
   ];
 

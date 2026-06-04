@@ -21,7 +21,7 @@ export const Hero: React.FC = () => {
           </span>
         </div>
         <p className="text-[0.85rem] leading-[1.8] text-brand-muted max-w-[320px] mb-8">
-          Send us your photo. We deliver any camera look, style, pose, and outfit — no studio, no travel, no limits. Just results.
+          Send us your photo. We deliver any camera look, style, pose, and outfit. No studio, no travel, no limits. Just results.
         </p>
         <a className="hero-cta inline-flex items-center gap-4 text-[0.75rem] tracking-[0.2em] uppercase border-b border-brand-accent pb-2 text-brand-accent hover:gap-6 transition-[gap] duration-300 w-fit cursor-pointer" href="#catalog">
           View Catalog &nbsp;&#8594;
