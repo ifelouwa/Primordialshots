@@ -40,7 +40,7 @@ export const HowItWorks: React.FC = () => {
           </h2>
         </div>
         <p className="text-[0.82rem] text-brand-muted leading-[1.8] max-w-[300px] md:text-right">
-          No studio. No travel. You send us a photo — we handle everything else. Delivered in days, not weeks.
+          No studio. No travel. You send us a photo, we handle everything else. Delivery in days, not weeks.
         </p>
       </FadeIn>
 

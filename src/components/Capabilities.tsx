@@ -55,7 +55,7 @@ export const Capabilities: React.FC = () => {
             </em>
           </h2>
           <p className="text-[0.85rem] leading-[1.9] text-brand-muted mb-6">
-            Whether you want a moody film portrait shot on 35mm, a sharp commercial headshot, a high-fashion editorial in couture, or a cinematic still — we deliver it. Remotely.
+            Whether you want a moody film portrait shot on 35mm, a sharp commercial headshot, a high-fashion editorial in couture or a cinematic still, we deliver it. Remotely.
           </p>
           <p className="text-[0.85rem] leading-[1.9] text-brand-muted mb-8">
             You never have to own the clothes, visit the studio, or fly to the location. We reconstruct the entire scene around you.

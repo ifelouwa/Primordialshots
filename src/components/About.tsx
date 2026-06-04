@@ -61,10 +61,10 @@ export const About: React.FC = () => {
             </em>
           </h2>
           <p className="text-[0.9rem] leading-[1.9] text-brand-muted mb-6">
-            Primordialshots was founded in 2026 on a single idea: world-class portrait photography should not require a studio, a wardrobe, or a flight. We work entirely remotely — you send us a photo, we return a masterpiece.
+            Primordialshots was founded in 2026 on a single idea: world-class portrait photography should not require a studio, a wardrobe, or a flight. We work entirely remotely, you send us a photo, we return a masterpiece.
           </p>
           <p className="text-[0.9rem] leading-[1.9] text-brand-muted mb-8">
-            We deliver any camera look, any style, any pose, any outfit. Our work reaches clients across Lagos, London, New York, and beyond — all without anyone leaving their home.
+            We deliver any camera look, any style, any pose, any outfit. Our work reaches clients across Lagos, London, New York, and beyond all without anyone leaving their home.
           </p>
 
           {/* Services grid */}
