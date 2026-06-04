@@ -3,10 +3,10 @@ import { FadeIn } from './FadeIn';
 
 export const GalleryCarousel: React.FC = () => {
   const row1 = [
-    { src: 'https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?w=400&auto=format&fit=crop&q=80', tag: 'Dark & Moody', name: 'Amara', size: 'tall' },
+    { src: '/catalog/birthday/Angela.jpeg', tag: 'Birthday', name: 'Angela', size: 'tall' },
     { src: 'https://images.unsplash.com/photo-1524504388940-b1c1722653e1?w=500&auto=format&fit=crop&q=80', tag: 'Editorial', name: 'Between Lines', size: 'wide' },
     { src: 'https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=400&auto=format&fit=crop&q=80', tag: 'Film Look', name: 'Kolade', size: 'normal' },
-    { src: 'https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=400&auto=format&fit=crop&q=80', tag: 'Documentary', name: 'Corners', size: 'tall' },
+    { src: '/catalog/birthday/jane.jpeg', tag: 'Birthday', name: 'Jane', size: 'tall' },
     { src: 'https://images.unsplash.com/photo-1488426862026-3ee34a7d66df?w=400&auto=format&fit=crop&q=80', tag: 'High Fashion', name: 'Tone Poem', size: 'normal' },
     { src: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=500&auto=format&fit=crop&q=80', tag: 'Cinematic', name: 'Dusk', size: 'wide' },
   ];
@@ -14,7 +14,7 @@ export const GalleryCarousel: React.FC = () => {
   const row2 = [
     { src: 'https://images.unsplash.com/photo-1589571894960-20bbe2828d0a?w=500&auto=format&fit=crop&q=80', tag: 'Portrait', name: 'Nadia', size: 'wide' },
     { src: 'https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?w=400&auto=format&fit=crop&q=80', tag: 'Studio', name: 'Joshua', size: 'normal' },
-    { src: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=400&auto=format&fit=crop&q=80', tag: 'Golden Hour', name: 'Teni', size: 'tall' },
+    { src: '/catalog/birthday/Sarah.jpeg', tag: 'Birthday', name: 'Sarah', size: 'tall' },
     { src: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400&auto=format&fit=crop&q=80', tag: 'Vintage', name: 'Emmanuel', size: 'normal' },
     { src: 'https://images.unsplash.com/photo-1517841905240-472988babdf9?w=500&auto=format&fit=crop&q=80', tag: 'Minimalist', name: 'Chisom', size: 'wide' },
     { src: 'https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?w=400&auto=format&fit=crop&q=80', tag: 'Campaign', name: 'Victor', size: 'normal' },

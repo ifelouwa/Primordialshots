@@ -27,7 +27,7 @@ export const Catalog: React.FC<CatalogProps> = ({ onPhotoClick }) => {
       title: 'Warm Glow',
       year: 'Angela — 2026',
       src: '/catalog/birthday/Angela.jpeg',
-      gridClass: 'col-span-12 md:col-span-4 md:row-span-2',
+      gridClass: 'col-span-12 md:col-span-4 md:row-span-1',
     },
     {
       id: 2,
@@ -54,17 +54,17 @@ export const Catalog: React.FC<CatalogProps> = ({ onPhotoClick }) => {
       title: 'Legacy',
       year: '2026',
       src: 'https://images.unsplash.com/photo-1509099836639-18ba1795216d?w=600&auto=format&fit=crop&q=80',
-      gridClass: 'col-span-12 md:col-span-5 md:row-span-2',
+      gridClass: 'col-span-12 md:col-span-5 md:row-span-1',
     },
-    {
-      id: 5,
-      category: 'milestones',
-      caption: 'Kelechi — Graduation — 2026',
-      title: 'New Horizons',
-      year: '2026',
-      src: 'https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=600&auto=format&fit=crop&q=80',
-      gridClass: 'col-span-12 md:col-span-3',
-    },
+    // {
+    //   id: 5,
+    //   category: 'milestones',
+    //   caption: 'Kelechi — Graduation — 2026',
+    //   title: 'New Horizons',
+    //   year: '2026',
+    //   src: 'https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=600&auto=format&fit=crop&q=80',
+    //   gridClass: 'col-span-12 md:col-span-3',
+    // },
     {
       id: 6,
       category: 'fashion',
@@ -185,10 +185,10 @@ export const Catalog: React.FC<CatalogProps> = ({ onPhotoClick }) => {
             <div
               key={card.id}
               onClick={() => onPhotoClick(card.src, card.caption)}
-              className={`relative overflow-hidden bg-brand-dark-surface cursor-pointer group transition-all duration-500 ${card.gridClass}`}
+              className={`relative overflow-hidden bg-brand-dark-surface cursor-pointer group transition-all duration-500 h-full ${card.gridClass}`}
             >
               <img
-                className="w-full h-full object-cover grayscale-[15%] contrast-[1.05] transition-all duration-700 ease-out group-hover:scale-[1.05] group-hover:grayscale-0 group-hover:contrast-[1.08] min-h-[260px] max-h-[550px]"
+                className="w-full h-full object-cover grayscale-[15%] contrast-[1.05] transition-all duration-700 ease-out group-hover:scale-[1.05] group-hover:grayscale-0 group-hover:contrast-[1.08] min-h-[260px]"
                 src={card.src}
                 alt={card.title}
               />
