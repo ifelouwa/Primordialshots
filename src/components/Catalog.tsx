@@ -23,10 +23,10 @@ export const Catalog: React.FC<CatalogProps> = ({ onPhotoClick }) => {
     {
       id: 1,
       category: 'birthday',
-      caption: 'Amara — Birthday Session — 2026',
+      caption: 'Angela — Birthday Session — 2026',
       title: 'Warm Glow',
-      year: 'Amara — 2026',
-      src: 'https://images.unsplash.com/photo-1527529482837-4698179dc6ce?w=600&auto=format&fit=crop&q=80',
+      year: 'Angela — 2026',
+      src: '/catalog/birthday/Angela.jpeg',
       gridClass: 'col-span-12 md:col-span-4 md:row-span-2',
     },
     {
@@ -86,10 +86,10 @@ export const Catalog: React.FC<CatalogProps> = ({ onPhotoClick }) => {
     {
       id: 8,
       category: 'birthday',
-      caption: 'Chisom — Birthday Session — 2026',
-      title: 'Candlelit Smile',
-      year: 'Chisom — 2026',
-      src: 'https://images.unsplash.com/photo-1513151233558-d860c5398176?w=600&auto=format&fit=crop&q=80',
+      caption: 'Sarah — Birthday Session — 2026',
+      title: 'Golden Hour Celebration',
+      year: 'Sarah — 2026',
+      src: '/catalog/birthday/Sarah.jpeg',
       gridClass: 'col-span-12 md:col-span-3',
     },
     {
@@ -117,7 +117,7 @@ export const Catalog: React.FC<CatalogProps> = ({ onPhotoClick }) => {
       title: 'The Next Chapter',
       year: '2026',
       src: 'https://images.unsplash.com/photo-1560250097-0b93528c311a?w=600&auto=format&fit=crop&q=80',
-      gridClass: 'col-span-12 md:col-span-6',
+      gridClass: 'col-span-12 md:col-span-4',
     },
     {
       id: 12,
@@ -126,7 +126,16 @@ export const Catalog: React.FC<CatalogProps> = ({ onPhotoClick }) => {
       title: 'Generations',
       year: '2026',
       src: 'https://images.unsplash.com/photo-1511895426328-dc8714191300?w=600&auto=format&fit=crop&q=80',
-      gridClass: 'col-span-12 md:col-span-6',
+      gridClass: 'col-span-12 md:col-span-4',
+    },
+    {
+      id: 13,
+      category: 'birthday',
+      caption: 'Jane — Birthday Session — 2026',
+      title: 'Candlelit Smile',
+      year: 'Jane — 2026',
+      src: '/catalog/birthday/jane.jpeg',
+      gridClass: 'col-span-12 md:col-span-4',
     },
   ];
 
